@@ -1,0 +1,678 @@
+
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='码云,代码托管,git,Git@OSC,开源,项目管理,版本控制,开源代码,代码分享,项目协作,开源项目托管,免费代码托管,Git代码托管,Git托管服务' name='Keywords'>
+<meta content='码云(Git@OSC)是开源中国社区团队推出的基于Git的快速的、免费的、稳定的在线代码托管平台,不限制私有库和公有库数量.' name='Description'>
+<title>
+Home · scimence / easyIcon - 码云 - 开源中国
+</title>
+<link href="/assets/favicon-f6562a1bc6a110e32367f6e0cab4ba89.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<meta content='git.oschina.net/scimence/easyIcon git https://git.oschina.net/scimence/easyIcon.git' name='go-import'>
+<link href="/assets/application-f52885388f7109d9b3b4ee68ecb17657.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="/assets/application-42539b05a15bb11872f88e4f5cd3db8e.js" type="text/javascript"></script>
+<script src="/assets/lib/jquery.timeago.zh-CN-713860ec36c1bc4d6aa16af7e6f6e2f5.js" type="text/javascript"></script>
+
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="s/pf/2y8umXDlBoInbNutvmWLJtMsACClSNsvTYjqzI=" name="csrf-token" />
+<script type="text/javascript">
+//<![CDATA[
+window.gon = {};gon.gravatar_url="http://www.gravatar.com/avatar/%{hash}?s=%{size}&d=mm";gon.clone_way_add="http";gon.http_clone="https://git.oschina.net/scimence/easyIcon.git";gon.user_project="scimence/easyIcon";gon.manage_branch="\u7ba1\u7406\u5206\u652f";gon.manage_tag="\u7ba1\u7406\u6807\u7b7e";
+//]]>
+</script>
+<!--[if lt IE 10]>
+<script>
+    window.location.href = "/incompatible.html"
+</script>
+<![endif]-->
+</head>
+
+<script src="/assets/projects/app-7618c7e7b0904e4dae2d5efa7bcbac29.js" type="text/javascript"></script>
+<body class='ui_basic project'>
+<script>
+  $(function() {
+    GitLab.GfmAutoComplete.dataSource = "/scimence/easyIcon/autocomplete_sources"
+    GitLab.GfmAutoComplete.Emoji.assetBase = ':///assets/emoji'
+    GitLab.GfmAutoComplete.setup();
+  });
+</script>
+
+<header class='ui grey menu grid page fixed noborder' id='git-header-nav'>
+<div class='git-header'>
+<div class='item gitosc-logo' style='padding:0;'>
+<a href="/"><img class='ui inline image' src='/logo.svg' style='height: 30px; width: 90px; padding-left: 0.5em;'>
+</a></div>
+<a href="/explore/recommend" class="item" style="font-size: 1.05rem">发现</a>
+<a href="http://git.mydoc.io/" class="item" style="font-size: 1.05rem">帮助</a>
+<a href="/oschina/git-osc/issues" class="item" style="font-size: 1.05rem">建议</a>
+<a href="http://www.oschina.net/" class="item" style="font-size: 1.05rem" target="_blank">社区</a>
+<form accept-charset="UTF-8" action="/search" class="item search_padding" id="projects-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ui icon left mini input'>
+<input autocomplete="off" id="search_top-search-input" name="search" placeholder="搜索项目..." style="border: 0px; background-color: #efefef" type="text" />
+<i class='search link icon' id='projects-search'></i>
+<input id="group_id" name="group_id" type="hidden" />
+<input id="project_id" name="project_id" type="hidden" value="686235" />
+</div>
+</form>
+
+<script>
+  $('#projects-search').click(function(){
+     $('#projects-search-form').submit();
+  });
+  // Author: Zoker, Date: 15.02.15, Note: 搜索框焦点背景色更改
+  $('#search_top-search-input').click(function(){
+    document.getElementById("search_top-search-input").style.backgroundColor = '#eaeaea'
+  });
+  $('#search_top-search-input').blur(function(){
+    document.getElementById("search_top-search-input").style.backgroundColor = '#efefef'
+  });
+  $('#projects-search-form').submit(function(){
+    query_name = $('.code-search-input').val()
+    if(query_name != undefined && $.trim(query_name).length < 5){
+      $('#search_top-search-input').focus();
+      alert("代码搜索关键字不能少于5个");
+      return false;
+    }
+  })
+  
+  // End
+</script>
+
+
+<div class='right menu userbar' id='git-nav-user-bar'>
+<div class='ui dropdown link item'>
+<i class='add icon'></i>
+<div class='menu'>
+<a href="/projects/new" class="item"><i class='add square icon'></i>
+新建项目
+</a><a href="/projects/oauth_github" class="item"><i class='github icon'></i>
+Github导入
+</a><a href="/scimence/codes/new" class="item"><i class='code icon'></i>
+新建代码片段
+</a><a href="/organizations/new" class="item"><i class='group icon'></i>
+新建组织
+</a></div>
+</div>
+<a href="/profile" class="item" title="个人资料"><i class='user icon'></i>
+</a><a href="/notifications" class="item" id="noti" title="0 未读通知 0 条私信"><i class='mail icon'></i>
+</a><a href="/logout" class="item" data-method="delete" rel="nofollow" title="退出登录"><i class='sign out icon'></i>
+</a><a href="/" class="profile-pic item"><img alt="334438_scimence" class="ui avatar image" id="git-nav-user" src="/uploads/38/334438_scimence.jpg?1427455664" title="控制面板" />
+</a><style>
+  .ui.circular.label{min-width:1.5em !important;min-height:0.5em !important;padding:0.2em !important;line-height:1em !important;text-align:center !important;border-radius:500rem !important}#noti{position:relative}#noti #unread-noti{font-weight:normal !important;margin-top:1.3rem !important;margin-left:-1.8rem !important;font-size:0.5rem !important}
+</style>
+
+</div>
+</div>
+</header>
+<script>
+  var $dropdown = $('#git-nav-user-bar .ui.dropdown');
+  $dropdown.dropdown({on: 'hover'});
+</script>
+
+<div class='ui grid page middle aligned' style='margin-top: 4.5rem;'>
+<div class='row' id='project-ok-msg' style='padding-top: 0px;margin-bottom:6px;display:none;font-size:14px;margin:0 15px;'>
+<div class='ui green message'>
+<div class='p'>
+私信发送成功
+</div>
+</div>
+</div>
+<div class='row' id='git-message'>
+<div class='column content'>
+<div class='ui blue message alertmsg'>
+Wiki 更新成功
+</div>
+</div>
+</div>
+</div>
+
+<!--[if lt IE 10]>
+<script>
+  window.location.href = "/incompatible.html"
+</script>
+<![endif]-->
+
+<div class='ui grid page aligned' id='git-project-title'>
+<div class='row' id='fetch-ok' style='padding-top: 0px; display: none'>
+<div class='sixteen wide column'>
+<div class='ui info icon floating message green'>
+<i class='info icon status-icon'></i>
+<div class='content'>
+<div class='header status-title'>
+代码拉取完成
+</div>
+<span class='status-message'>
+系统将自动刷新
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class='row' style='margin-left:0px'>
+<div class='ten wide column'>
+<h2 class='ui header remote-message' style='font-weight: 200'>
+<i class='octicon octicon-repo'></i>
+<span><a href="/scimence" class="author" title="scimence">scimence</a> / <a href="/scimence/easyIcon" class="repository" style="padding-bottom: 0px" title="easyIcon">easyIcon</a><a href="/languages/C%23" class="ui small label" id="project-language" target="_blank">C#</a>
+<style>
+  #project-language{
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+</style>
+<script>
+  var languages = $('#project-languages').html();
+  $("#project-language").popup({html: languages,variation: 'flowing',lastResort: 'bottom center'});
+</script>
+<a href="/repositories/featured" id="recomment_icon_1" title="推荐列表"><img alt="Recommend" class="ui inline mini image" id="recom_image" src="/assets/recommend-4148c817e0ebf200acaeb9da3066e806.svg" />
+</a><style>
+  #recomment_icon_0{
+    filter:Gray;
+    -webkit-filter: grayscale(100%);
+  }
+  #recom_image{
+    margin-bottom: 2px;
+  }
+</style>
+<script>
+  $(document).ready(function(){
+    $('.self_rec_class').attr('href','javascript:void(0)');
+    $('.self_rec_class').popup({
+      position : 'right center',
+      title : '审核中'
+    });
+    $('.rec_class').popup({
+      position : 'right center',
+      title : '自荐'
+    });
+  });
+</script>
+</span>
+</h2>
+</div>
+<div class='six wide column right aligned middle aligned' id='git-project-operation'>
+<div class='ui mini buttons basic'>
+<div class='ui button' id='project-donate' title='捐赠此项目作者'>
+<i class='icon gift' style='margin-right:0;'></i>
+捐赠
+</div>
+<div class='ui modal donate-show'>
+<i class='close icon'></i>
+<div class='header'>
+捐赠项目 easyIcon
+<span style='font-weight: normal; font-size: 14px; margin-left: 20px'>
+项目的发展离不开你的支持，请作者喝杯咖啡吧！
+</span>
+</div>
+<div class='content' style='text-align: center'>
+<div class='qrcode_cs'><p><div class='alipay'></div></p><img src=/uploads/qrcode/qrcode_alipay_1463184156686235.png width=300 height=300 style='margin-right: 30px;' /></div><style>.qrcode_cs{width:100%}</style>
+</div>
+<div class='actions' id='modal-act'>
+<a href="/scimence/easyIcon/donates" style="float: left; font-weight: bold;margin-top: 10px;">设置捐赠二维码</a>
+<div class='ui green button'>
+完成
+</div>
+</div>
+</div>
+</div>
+<span class='basic buttons mini ui watch-container watched'>
+<a href="/scimence/easyIcon/unwatch" class="ui button unwatch" data-method="post" data-remote="true" rel="nofollow">Unwatch
+</a><a href="/scimence/easyIcon/watch" class="ui button watch" data-method="post" data-remote="true" rel="nofollow">Watch
+</a><a href="/scimence/easyIcon/watchers" class="ui button social-count" title="48">48
+</a></span>
+<span class='basic buttons mini star-container ui'>
+<a href="/scimence/easyIcon/unstar" class="ui button unstar" data-method="post" data-remote="true" rel="nofollow">Unstar
+</a><a href="/scimence/easyIcon/star" class="ui button star" data-method="post" data-remote="true" rel="nofollow">Star
+</a><a href="/scimence/easyIcon/stargazers" class="ui button social-count" title="138">138
+</a></span>
+<span class='ui buttons basic fork-container'>
+<a href="#" class="ui button disabled fork " id="fork-top-button">Fork
+</a><a href="/scimence/easyIcon/members" class="ui button count" title="34">34
+</a></span>
+</div>
+</div>
+<div class='row' id='import-result-message' style='padding-top: 0px; display: none'>
+<div class='sixteen wide column'>
+<div class='ui icon yellow message status-color'>
+<i class='info icon status-icon' style='width:60px;padding-right:12px;'></i>
+<i class='close icon'></i>
+<div class='header status-title'>
+同步状态
+</div>
+<span class='status-message'></span>
+</div>
+</div>
+</div>
+<div class='row' id='fork-message' style='padding-top: 0px; display: none'>
+<div class='sixteen wide column'>
+<div class='ui info icon floating message status-color'>
+<i class='help icon status-icon'></i>
+<div class='content'>
+<div class='header status-title'>
+代码Fork？
+</div>
+<span class='status-message'>
+Fork 将在后台执行，是否继续？
+<div class='ui mini buttons'>
+<div class='ui button positive' id='fork-modal-accept'>
+确定
+</div>
+<div class='or'></div>
+<div class='ui button close' id='fork-modal-cancel'>
+取消
+</div>
+</div>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    var glo_is_fork;
+  
+    glo_is_fork = false;
+  
+    this.title_project_path = "easyIcon";
+  
+    this.title_fork_url = "/scimence/easyIcon/sync_fork";
+  
+    $('#fork-top-button').click(function(f) {
+      f.preventDefault();
+      if (!glo_is_fork) {
+        $('#fork-message').show();
+        $('#fork-modal-accept').click(function() {
+          var form, input1;
+  
+          glo_is_fork = true;
+          form = $("<form></form>");
+          form.attr('action', "/scimence/fork_project/scimence/easyIcon");
+          form.attr('method', 'post');
+          input1 = $("<input type='hidden' name='authenticity_token' />");
+          input1.attr('value', $('meta[name="csrf-token"]').attr('content'));
+          form.append(input1);
+          form.appendTo("body");
+          form.css('display', 'none');
+          form.submit();
+          return $('#fork-message').hide();
+        });
+        return $('#fork-modal-cancel').click(function() {
+          return $('#fork-message').hide();
+        });
+      }
+    });
+  
+  }).call(this);
+</script>
+<script>
+  (function() {
+    $('#project-donate').on('click', function() {
+      $('.donate-content').val('');
+      return $('.donate-show').modal('show');
+    });
+  
+  }).call(this);
+</script>
+<script>
+  is_creator = "1"
+  is_user = "1"
+  var no_donate = ""
+  var mess_button = ""
+  if(is_user=='1'){
+    var mess_button = " <a id='project-user-message', class='set-msg-content', style='position: static; background: none; color: #00b2f3; font-size: 15px; font-weight: bold;'>私信</a>"
+  }
+  if(is_creator == '1'){
+    no_donate = "您还没有上传捐赠二维码，快去开启吧！"+" <a href = '/scimence/easyIcon/donates'> 设置 </a>"
+  }else{
+    no_donate = "项目的主人没有上传捐赠二维码，快通知他让他开启吧！"+mess_button
+  }
+  $('#no_donate').html(no_donate)
+  $('.alipay').html("支付宝")
+  $('.wechat').html("微信")
+</script>
+<style>
+  i.icon.loading {
+    height: 1em;
+    -webkit-animation: icon-loading 1.2s linear infinite;
+    animation: icon-loading 1.2s linear infinite;
+  }
+  .remote-message a:nth-child(1){
+    display: inline-block;
+    max-width: 300px;
+    white-space: nowrap;
+    vertical-align: text-bottom;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .remote-message a:nth-child(2){
+    display: inline-block;
+    max-width: 450px;
+    white-space: nowrap;
+    vertical-align: text-bottom;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  #project-donate{
+    background-color: #f0f5f9 !important;
+    color: #4183C4 !important;
+    font-weight: bold;
+  }
+  .qrcode_cs{
+    float: left;
+  }
+</style>
+
+<div class='ui grid page middle aligned' id='git-project-nav'>
+<div class='ui small secondary pointing menu' id='git-project-menu' style='text-align: center;'>
+<a href="/scimence/easyIcon" class="item ">代码
+</a><a href="/scimence/easyIcon/issues" class="item ">Issues
+<span class='ui mini label'>
+1
+</span>
+</a><a href="/scimence/easyIcon/pulls" class="item ">Pull Requests
+<span class='ui mini label'>0</span>
+</a><a href="/scimence/easyIcon/attach_files" class="item ">附件
+<span class='ui mini label'>1</span>
+</a><a href="/scimence/easyIcon/wikis/home" class="item active">Wiki
+<span class='ui mini label'>3</span>
+</a><a href="/scimence/easyIcon/pages" class="item ">Pages
+<i class='checkmark icon' style='color:green;font-size:10px'></i>
+</a><a href="/scimence/easyIcon/repository/stats/master" class="item ">统计
+</a><a href="/scimence/easyIcon/code_analysis" class="item ">质量分析
+</a><a href="/scimence/easyIcon/paas/select_platform" class="item ">代码演示
+</a><a href="/scimence/easyIcon/settings" class="item ">管理
+</a></div>
+</div>
+<script>
+  $('#git-versions.dropdown').dropdown();
+  $.ajax({
+    url:"/scimence/easyIcon/access/add_access_log",
+    type:"GET"
+  });
+</script>
+
+<div class='ui grid page middle aligned'>
+<div class='ui grid page middle aligned' id='git-wiki-title'>
+<div class='ui tabular menu small'>
+<a href="/scimence/easyIcon/wikis/home" class="item active">主页</a>
+<a href="/scimence/easyIcon/wikis/pages" class="item ">页面</a>
+<a href="/scimence/easyIcon/wikis/git_access" class="item "><i class='icon download'></i>
+Git 访问
+</a><a href="/scimence/easyIcon/wikis/new" class="add-new-wiki float-right ui button green mini"><i class='icon plus'></i>
+新页面
+</a></div>
+</div>
+
+<div class='u divider'></div>
+<div class='ui grid page' id='git-wiki-content' style='min-height:200px;'>
+<div class='row'>
+<div class='twelve wide column' style='margin-top: 10px;'>
+<h2 class='header ui'>
+Home
+</h2>
+<div class='ui secondary mini menu wiki-menu float-right' style='margin-bottom:0px;margin-top:0px;'>
+<a href="/scimence/easyIcon/wikis/Home/history" class="ui item mini wiki-edit">页面历史
+</a><a href="/scimence/easyIcon/wikis/Home/edit" class="ui item mini wiki-edit"><i class='edit icon'></i>
+编辑
+</a><div class='ui dropdown link item' id='clone-loc' style='text-align:center;'>
+<span class='text'>
+克隆地址
+</span>
+<i class='dropdown icon'></i>
+<div class='menu'>
+<div class='item' data-clipboard-text='http://git.oschina.net/scimence/easyIcon.wiki.git' id='clone-wiki-url'>
+HTTPS
+</div>
+<div class='item' data-clipboard-text='git@git.oschina.net:scimence/easyIcon.wiki.git' id='clone-wiki-ssh-url'>
+SSH
+</div>
+</div>
+</div>
+</div>
+<div class='clearfloats'></div>
+<style>
+  .wiki-menu .item > i.icon {
+    margin-right: 0px !important;
+  }
+</style>
+<script>
+  $('#clone-loc').dropdown({
+      transition: 'drop'
+  });
+  function copyTextToClipboard(text) {
+    var copyFrom = $('<textarea/>');
+  
+    copyFrom.text(text);
+    $('body').append(copyFrom);
+    copyFrom.select();
+    try{
+      document.execCommand('copy', true);
+    }catch(error){
+    }finally{
+      copyFrom.remove();
+    }
+  }
+  function copyToClipboard(text){
+    window.prompt("已复制到剪贴板! :Ctrl+C,Enter",text);
+    copyTextToClipboard(text);
+  }
+  $('#clone-wiki-url').on('click',function(){
+    var value = $('#clone-wiki-url').attr('data-clipboard-text');
+    copyToClipboard(value);
+  });
+  
+  $('#clone-wiki-ssh-url').on('click',function(){
+    var value = $('#clone-wiki-ssh-url').attr('data-clipboard-text');
+    copyToClipboard(value);
+  });
+  
+  //
+  //$(function() {
+  //  var clip_holder = $('#clone-wiki-url');
+  //  clip_holder.popup({on: 'click', content: '已复制到剪贴板!'}).popup('hide');
+  //  var menu = $('.ui.dropdown.link.item');
+  //  clip_holder.zclip({
+  //      path:'/ZeroClipboard.swf',
+  //      copy: function(){return clip_holder.attr('data-clipboard-text')},
+  //      clickAfter:false,
+  //      afterCopy:function(){
+  //        menu.popup('show');
+  //      },
+  //      beforeCopy:function(){
+  //        menu.popup('hide');
+  //      }
+  //   });
+  //})
+</script>
+
+<div class='markdown-body' style='overflow: visible;'>
+<p>Welcome to the easyIcon wiki!</p>&#x000A;&#x000A;<p><strong>easyIcon是一款简单易用的Icon制作工具，助您快速制作所需Icon (操作简便，拖拽进入，一键导出)</strong></p>&#x000A;&#x000A;<p>软件的主要功能有：</p>&#x000A;&#x000A;<p>1、拖拽载入一张图像，导出为若干其它尺寸。</p>&#x000A;&#x000A;<p><img alt="输入图片说明" src="http://git.oschina.net/uploads/images/2015/1220/155244_524b2f24_334438.png" title="制作Icon" /></p>&#x000A;&#x000A;<p><img alt="输入图片说明" src="http://git.oschina.net/uploads/images/2015/1220/155342_cd1852a7_334438.png" title="导出不同的尺寸" /></p>&#x000A;&#x000A;<p>2、可选择或自定义导出Icon的轮廓样式。</p>&#x000A;&#x000A;<p><img alt="输入图片说明" src="http://git.oschina.net/uploads/images/2015/1220/155418_c856ab57_334438.png" title="按指定样式导出" /></p>&#x000A;&#x000A;<p><img alt="输入图片说明" src="http://git.oschina.net/uploads/images/2015/1220/155453_56fd9e38_334438.png" title="导出不同的样式" /></p>&#x000A;&#x000A;<p>3、支持批量操作（可批量载入若干图像文件，分别导出为同一或若干不同的尺寸、不同的格式 png、ico、jpg）</p>&#x000A;&#x000A;<p><img alt="输入图片说明" src="http://git.oschina.net/uploads/images/2015/1220/155528_efe02c34_334438.png" title="功能区介绍" /></p>&#x000A;</div>
+<div class='ui divider'></div>
+<div class='column'>
+<div class='ui label text'>
+<a href="/scimence" class="commit-author-link"><img alt="" class="mini avatar circular ui image s16" src="/uploads/38/334438_scimence.jpg?1427455664" width="16" /> <span class="commit-author-name">scimence</span></a>
+最后编辑于
+<span class='timeago' title='2015-12-21 20:28:05 +0800'>
+2015-12-21 20:28
+</span>
+</div>
+</div>
+</div>
+<div class='four wide column'>
+<div class='ui vertical'>
+<div class='header item'>
+<div class='ui compact menu mini search_wiki'>
+<div class='ui search' id='search_wiki'>
+<div class='ui icon input'>
+<input class='prompt' placeholder='快速搜索..' type='text'>
+<i class='search icon'></i>
+</div>
+<div class='results'></div>
+</div>
+</div>
+<script>
+  var wiki_pages = [{"title":"Home","url":"/scimence/easyIcon/wikis/Home"},{"title":"OnlineSerial","url":"/scimence/easyIcon/wikis/OnlineSerial"},{"title":"SettingPage","url":"/scimence/easyIcon/wikis/SettingPage"}]
+  $('#search_wiki').search({
+    source: wiki_pages
+  })
+</script>
+<style>
+  .ui.search>.results{width:100%}.ui.search .input{display:block}.search_wiki.ui.compact.menu{display:block}.ui.search>.results .result{font-size:14px}.prompt{border:0px !important}
+</style>
+
+</div>
+</div>
+<div class='ui vertical menu'>
+<div class='header item'>
+Wikis
+<div class='ui label'>
+3
+</div>
+</div>
+<div class='item'>
+<div class='menu'>
+<a href="/scimence/easyIcon/wikis/Home" class="item"><i class='ui icon caret right'></i>
+Home
+</a><a href="/scimence/easyIcon/wikis/OnlineSerial" class="item"><i class='ui icon caret right'></i>
+OnlineSerial
+</a><a href="/scimence/easyIcon/wikis/SettingPage" class="item"><i class='ui icon caret right'></i>
+SettingPage
+</a></div>
+</div>
+</div>
+<div class='wiki_toc ui sticky'></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  $(document).ready(function(){
+  /*
+    $('.ui.sticky').sticky({
+      offset: 50,
+      context: '#git-wiki-content'
+    });
+    $('.wiki_toc').toc({});
+    $('ul > li:first-child').remove();
+    */
+  });
+</script>
+<style>
+  .markdown-body{
+    margin-top: 10px;
+  }
+  .wiki_toc{
+    position: fixed;
+  }
+  .wiki_toc ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .wiki_toc li{
+    padding: 5px 10px;
+  }
+  .wiki_toc a{
+    color: #008E59;
+    text-decoration: none;
+    display: block;
+  }
+  .wiki_toc .toc-h2{
+    padding-left: 10px;
+  }
+  .wiki_toc .toc-h3{
+    padding-left: 20px;
+  }
+  .wiki_toc .toc-active{
+    color: #000;
+    background: #f3f3f3;
+      z-index: 1;
+    text-decoration: none;
+    border-left: 3px solid #009A61;
+  }
+</style>
+
+<script>
+  Tree.initHighlightTheme('white')
+</script>
+<div id='gotop'></div>
+<style>
+  #gotop{
+  display: none;
+    width: 30px;
+    height: 32px;
+    position: fixed;
+    right: 50px;
+    cursor: pointer;
+    bottom: 165px;
+    border-radius: 10px;
+    opacity: 3;
+    background: url("/cd-top-arrow.svg") no-repeat 50% 50%;
+    background-color: #bab3b2;
+  }
+</style>
+<script>
+  function goTop(){
+    $(window).scroll(function(e) {
+      if($(this).scrollTop()>50)
+        $("#gotop").fadeIn(1000);
+      else
+        $("#gotop").fadeOut(1000);
+    });
+  };
+  $(function(){
+    $("#gotop").click(function(e) {
+      $('body,html').animate({scrollTop:0},500);
+    });
+    goTop();
+  });
+</script>
+
+<footer id='git-footer-main'>
+<div class='ui grid page'>
+<div class='ten wide column alias' style='padding-left:0;'>
+<a href='http://www.oschina.net'>© OSChina.NET</a>
+<a href="/terms">使用条款</a>
+<a href="/piracy">隐私</a>
+<a href="#" class="pop_email" onclick="return false;" title="Email: git#oschina.cn">联系我们
+</a><a href="/appclient" target="_blank">APP下载
+</a><a>QQ交流群: 515965326</a>
+<a href="javascript:void(0)" onclick="force_mobile()" style="float: right">切换至手机版</a>
+</div>
+<div class='three wide column item' style='text-align:left;'>
+<a href="/language/zh-CN">简 体
+</a><span style='color:#CECECE'>
+/
+</span>
+<a href="/language/zh-TW">繁 體
+</a><span style='color:#CECECE'>
+/
+</span>
+<a href="/language/en">English
+</a></div>
+<div class='three wide column' style='text-align:right;margin-top:-6px;padding-right:0;float:right;'>
+本站带宽由
+<a href="http://www.51idc.com/" target="_blank"><img alt="51idc" src="/51idc.png" style="width: 75px; height: 20px" />
+</a>提供
+</div>
+</div>
+</footer>
+<style>
+  .alias a{margin-left:3px;}
+  #git-footer-main .column, #git-footer-main a{font-size:13px !important;}
+</style>
+<script>
+  $('.pop_email').popup({});
+  function force_mobile() {
+    current_url = window.location.href;
+    force_mobile_url = current_url.substr(0,current_url.indexOf('?'))+'?force_mobile=true';
+    location.href=force_mobile_url;
+  }
+</script>
+
+</body>
+</html>
