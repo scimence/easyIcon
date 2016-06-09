@@ -80,7 +80,7 @@ namespace easyIcon
             // 获取设置数据
             if (SettingData == null)
             {
-                string url = "https://git.oschina.net/scimence/UpdateFiles/raw/master/files/settingPage.txt";
+                string url = "https://git.oschina.net/scimence/easyIcon/raw/master/files/settingPage.txt";
                 SettingData = mainForm.F.getWebData(url);
                 if (!SettingData.Equals("")) SettingData = getNodeData(SettingData, "scimence", false);
             }
@@ -92,7 +92,7 @@ namespace easyIcon
             // 联网获取本机的注册码
             if (OnlineSerial == null)
             {
-                string url = "https://git.oschina.net/scimence/UpdateFiles/raw/master/files/onlineSerial.txt";
+                string url = "https://git.oschina.net/scimence/easyIcon/raw/master/files/onlineSerial.txt";
                 OnlineSerial = mainForm.F.getWebData(url);
                 if (!OnlineSerial.Equals("")) OnlineSerial = getNodeData(OnlineSerial, "scimence", false);
                 if (!OnlineSerial.Equals("")) OnlineSerial = getNodeData(OnlineSerial, MachineInfo.MachineSerial(), true);
