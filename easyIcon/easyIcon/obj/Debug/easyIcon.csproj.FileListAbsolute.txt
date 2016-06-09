@@ -1,0 +1,10 @@
+E:\SVN\workSpace\easyIcon\easyIcon\easyIcon\bin\Debug\easyIcon.exe.config
+E:\SVN\workSpace\easyIcon\easyIcon\easyIcon\bin\Debug\easyIcon.exe
+E:\SVN\workSpace\easyIcon\easyIcon\easyIcon\bin\Debug\easyIcon.pdb
+E:\SVN\workSpace\easyIcon\easyIcon\easyIcon\obj\Debug\easyIcon.csprojResolveAssemblyReference.cache
+E:\SVN\workSpace\easyIcon\easyIcon\easyIcon\obj\Debug\easyIcon.mainForm.resources
+E:\SVN\workSpace\easyIcon\easyIcon\easyIcon\obj\Debug\easyIcon.Properties.Resources.resources
+E:\SVN\workSpace\easyIcon\easyIcon\easyIcon\obj\Debug\easyIcon.Register.resources
+E:\SVN\workSpace\easyIcon\easyIcon\easyIcon\obj\Debug\easyIcon.csproj.GenerateResource.Cache
+E:\SVN\workSpace\easyIcon\easyIcon\easyIcon\obj\Debug\easyIcon.exe
+E:\SVN\workSpace\easyIcon\easyIcon\easyIcon\obj\Debug\easyIcon.pdb
