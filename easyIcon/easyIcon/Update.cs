@@ -22,7 +22,7 @@ namespace easyIcon
             try
             {
                 // 获取版本配置信息 示例：scimence( Name1(6JSO-F2CM-4LQJ-JN8P) )scimence
-                string VersionInfo = WebSettings.getWebData("https://git.oschina.net/scimence/easyIcon/raw/v2016_06_09/files/versionInfo.txt");
+                string VersionInfo = WebSettings.getWebData("https://git.oschina.net/scimence/easyIcon/raw/master/files/versionInfo.txt");
                 if (VersionInfo.Equals("")) return true;
 
                 // 获取版本更新信息
