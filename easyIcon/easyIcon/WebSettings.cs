@@ -40,6 +40,8 @@ namespace easyIcon
         // NeedToRegister(false)&#x000A;RegisterPrice(1)   finalNode的数据格式
         public static string getNodeData(string data, string nodeName, bool finalNode)
         {
+            if (!data.Contains(nodeName)) return "";
+
             try
             {
                 string S = nodeName + "(", E = ")" + (finalNode ? "" : nodeName);

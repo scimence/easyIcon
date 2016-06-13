@@ -1,2 +1,3 @@
-version(20160609)
+version(20160613)
 url(https://git.oschina.net/scimence/easyIcon/raw/master/files/easyIcon.exe)
+updateInfo("°æ±¾¸üÐÂ 2016-06-13 23:05 \r\neasyIcon.exe Md5:d73422ba089437d3d9e8c30b219a4ccb")

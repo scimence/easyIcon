@@ -11,7 +11,7 @@ namespace easyIcon
     {
         //public static string ToolsName = "easyIcon";          // 工具名称
         static string ToolsName = ToolsFunction.ToolsName;      // 工具名称
-        static long curVersion = 20160609;                      // 记录当前软件版本信息
+        static long curVersion = 20160613;                      // 记录当前软件版本信息
 
 
         /// <summary>
@@ -28,6 +28,7 @@ namespace easyIcon
                 // 获取版本更新信息
                 long lastVersion = long.Parse(WebSettings.getNodeData(VersionInfo, "version", true));
                 string url = WebSettings.getNodeData(VersionInfo, "url", true);
+                string updateInfo = WebSettings.getNodeData(VersionInfo, "updateInfo", true);
 
                 // 检测到新的版本
                 if (lastVersion > curVersion)
@@ -45,7 +46,7 @@ namespace easyIcon
                             string fileName = curDir() + System.IO.Path.GetFileName(url);
 
                             // 生成更新时的显示信息
-                            String info = "当前版本：" + curVersion + "\r\n" + "最新版本：" + lastVersion + "\r\n";
+                            String info = "当前版本：" + curVersion + "\r\n" + "最新版本：" + lastVersion + "\r\n" + updateInfo;
 
                             // 调用更新插件执行软件更新逻辑
                             String arg = "\"" + url + "\"" + " " + "\"" + fileName + "\"" + " " + "true" + " " + "\"" + info + "\"";
