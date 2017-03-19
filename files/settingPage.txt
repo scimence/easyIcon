@@ -1,5 +1,6 @@
 scimence(
 NeedToRegister(false)
 RegisterPrice(1)
-RecommendUrl(http://scimence.oschina.io/easyicon/)
+RecommendUrl(http://www.bajie1.com/reg.asp?r=scimence)
+RecommendUrl_2(http://scimence.oschina.io/easyicon/)
 )scimence
