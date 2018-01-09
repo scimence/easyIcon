@@ -1,6 +1,6 @@
 scimence(
 NeedToRegister(false)
 RegisterPrice(1)
-RecommendUrl(http://www.bajie1.com/reg.asp?r=scimence)
+RecommendUrl(http://scimence.gitee.io/qrtool/files/Alipay/Alipay.html)
 RecommendUrl_2(http://scimence.oschina.io/easyicon/)
 )scimence
