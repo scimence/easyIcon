@@ -1,0 +1,15 @@
+﻿服务器资源目录(https://git.oschina.net/scimence/easyIcon/raw/master/)
+本地资源目录(E:\SVN\workSpace\easyIcon\)
+
+待更新文件(
+
+easyIcon.exe(ac4640ae7c5f97b3771fc6f2906d453a)
+LICENSE(a81d08c396626cebe2d594fd315a41f5)
+README.md(50a7ba24e85edfc2ca0fadadc71ce08e)
+files/easyIcon.exe(ac4640ae7c5f97b3771fc6f2906d453a)
+files/easyIcon.zip(25171d97105465a491f2151639853c9f)
+files/onlineSerial.txt(83ee8f18af6f79f415a1ac903485268f)
+files/settingPage.txt(b2c14833b0fc7537940a2a7b51d1351c)
+files/versionInfo.txt(4c36ef8d51b6d9b05d761092b0fe7961)
+
+)待更新文件
