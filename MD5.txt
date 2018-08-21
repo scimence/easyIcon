@@ -1,19 +1,21 @@
-﻿服务器资源目录(http://scimence.oschina.io/easyicon/)
-本地资源目录(E:\SVN\workSpace\easyIcon\)
+﻿服务器资源目录(https://gitee.com/scimence/easyIcon/raw/master/)
+本地资源目录(E:\tmp\easyIcon\)
 
 待更新文件(
 
 easyIcon.data(abea5d24fd30d30580d55dc1e0ed4ae3)
-easyIcon.exe(f906661eb4edb2c601205c369767f64a)
-LICENSE(a81d08c396626cebe2d594fd315a41f5)
-note.html(d6d1f6cc7b865f55be079959a29454dd)
+easyIcon.exe(b03dde88491a4797932a63d46a6930d1)
+LICENSE(534a530ca7913dd8910802af3aa10283)
+note.html(1bc580a249f7173c8f86999f9a0f84ef)
 README.md(50a7ba24e85edfc2ca0fadadc71ce08e)
-files/easyIcon.exe(f906661eb4edb2c601205c369767f64a)
+files/easyIcon.exe(b03dde88491a4797932a63d46a6930d1)
 files/easyIcon.zip(25171d97105465a491f2151639853c9f)
 files/easyIcon_20180819.exe(aa689d6878a13d5a4fd0579ea62003f1)
 files/easyIcon_20180819_加壳.zip(a8c83e849abb8ae343e65cf0f04c70b2)
 files/easyIcon_20180820.7z(2c7e92afa4ed667d0c14cbe6e2506eaf)
-files/onlineSerial.txt(83ee8f18af6f79f415a1ac903485268f)
+files/easyIcon_20180821.zip.data(76c092f741683040f5797807a189bad4)
+files/easyIcon_20180822.exe(b03dde88491a4797932a63d46a6930d1)
+files/onlineSerial.txt(4a8cf0d6a5986a0fa70e0454b1c49734)
 files/settingPage.txt(b2c14833b0fc7537940a2a7b51d1351c)
 files/versionInfo.txt(4c36ef8d51b6d9b05d761092b0fe7961)
 
