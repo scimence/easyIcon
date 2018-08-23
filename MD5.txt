@@ -1,4 +1,4 @@
-﻿服务器资源目录(http://scimence.oschina.io/easyicon/)
+﻿服务器资源目录(https://gitee.com/scimence/easyIcon/raw/master/)
 本地资源目录(E:\tmp\easyIcon\)
 
 待更新文件(
@@ -31,5 +31,10 @@ files/easyIcon_20180823.zip.data(fa195b10f537fd5842391201f9131745)
 files/onlineSerial.txt(4a8cf0d6a5986a0fa70e0454b1c49734)
 files/settingPage.txt(b2c14833b0fc7537940a2a7b51d1351c)
 files/versionInfo.txt(4c36ef8d51b6d9b05d761092b0fe7961)
+png/1_960x640.png(46665e5664fd8c1ec7b59a5321b0b4ff)
+png/2_960x640.png(1e809727d89f4bb1a6a14c37439e8756)
+png/3_960x640.png(2e88f7c427798316519b2f1edb8004e3)
+png/4_960x640.png(efcf32596ac839570bcecdad8d54cf2f)
+png/5_960x640.png(c1512e9aa472b8ad32aa1ee1930be8b0)
 
 )待更新文件
