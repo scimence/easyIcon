@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "easyIcon", "easyIcon\easyIcon.csproj", "{F7F12918-53BC-4E35-83FB-61C4A8033F3C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "easyIcon", "easyIcon\easyIcon.csproj", "{56796487-1693-4072-82C2-D9C3F087FBB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F7F12918-53BC-4E35-83FB-61C4A8033F3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7F12918-53BC-4E35-83FB-61C4A8033F3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7F12918-53BC-4E35-83FB-61C4A8033F3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7F12918-53BC-4E35-83FB-61C4A8033F3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56796487-1693-4072-82C2-D9C3F087FBB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56796487-1693-4072-82C2-D9C3F087FBB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56796487-1693-4072-82C2-D9C3F087FBB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56796487-1693-4072-82C2-D9C3F087FBB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

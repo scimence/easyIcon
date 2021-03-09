@@ -1,17 +1,18 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Resources;
 
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("WebApplication11")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("easyIcon（一款简单易用的icon制作软件）")]
+[assembly: AssemblyDescription("一款专门为制作icon，而量身定做的软件，拖动导入，一键导出")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("WebApplication11")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2018")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany("Scimence")]
+[assembly: AssemblyProduct("easyIcon")]
+[assembly: AssemblyCopyright("Copyright ©  2019 scimence")]
+[assembly: AssemblyTrademark("Scimence")]
 [assembly: AssemblyCulture("")]
 
 // 将 ComVisible 设置为 false 使此程序集中的类型
@@ -20,7 +21,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("a6a9d9c4-b684-4320-9fa0-5865e655b9df")]
+[assembly: Guid("4c6d2a41-ae63-4821-85f0-4a58c732e664")]
 
 // 程序集的版本信息由下面四个值组成:
 //
@@ -32,5 +33,6 @@ using System.Runtime.InteropServices;
 // 可以指定所有这些值，也可以使用“生成号”和“修订号”的默认值，
 // 方法是按如下所示使用“*”:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("5.0.0.0")]
+[assembly: AssemblyFileVersion("2019.04.13.0")]
+[assembly: NeutralResourcesLanguageAttribute("zh-CN")]
